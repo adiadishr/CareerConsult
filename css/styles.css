@@ -442,8 +442,8 @@ i {
   color: var(--white);
 }
 .appointment-button:hover {
-  /* box-shadow: var(--dark-gray) 0 1px 5px; */
-  border: 3px groove var(--dark-gray);
+  box-shadow: var(--primary-color) 0 1px 10px;
+  border: 2px groove var(--dark-gray);
   border-radius: 0px;
   background-color: var(--gray);
   filter: brightness(150%);
