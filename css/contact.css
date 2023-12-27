@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #16449a;
+    --primary-color-dark: #1d3e74;
+    --bg-color: #f9fafe;
+    --secondary-color: #f4041d;
+    --secondary-color-dark: #551212;
+    --text-color: #111111;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --gray: #e4e4e4ee;
+    --dark-gray: #444444;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--text-color);
+    /* background-image: url(../assets/office-bg.png); */
+}
+
+nav {
+    max-width: 100%;
+    padding: 0rem 6rem 0rem 2.65rem;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    box-shadow: 0px 0px 10px 0px;
+    z-index: 1;
+}
+
+nav img {
+    padding-top: 2rem;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.links a {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: var(--primary-color-dark);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    padding: .5rem 1rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: var(--primary-color-dark);
+}
+
+.sidenavbtn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding-left: 3.5rem;
+}
+
+.sidenavbtn:hover {
+    color: var(--primary-color-dark);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--white);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 0px 20px 20px 0px rgb(0, 0, 0);
+}
+
+.sidenavlinks {
+    position: absolute;
+    top: 29px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--text-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    font-size: 2rem;
+}
+
+/* end of nav */
+
+.contact-container {
+    padding: 2rem 0rem 1rem 0rem;
+    color: var(--text-color);
+    /* z-index: -1; */          
+    position: relative; 
+}
+
+.top-text-wrapper {
+    background-image: url(../assets/images/office-bg.png);
+    background-size: cover;
+    background-position: center;
+    margin: -35px 0px 0px;
+    z-index: -1;
+    position: relative;
+    height: 15rem;
+}
+
+.top-text-wrapper-brightness{
+    backdrop-filter: brightness(40%);
+    height: inherit;
+}
+
+.top-text {
+    color: var(--white);
+    text-align: center;
+    padding: 2.5rem 0rem 0rem 0rem ;
+}
+
+.align-contact-box {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.contact-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    border-radius: 10px;
+    height: 21rem;
+    margin: -55px 0px 0px 0px;
+    width: 90vw;
+}
+
+.contact-box h5 {
+    font-size: 1.5rem;
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+.left {
+    background-color: var(--primary-color-dark);
+    padding: 1rem;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: var(--white);
+}
+
+.left p {
+    padding: 0rem 0rem .5rem 0rem;
+    font-size: 1rem;
+}
+
+.right {
+    background-color: var(--white);
+    padding: 1rem 1rem 1rem 1rem;
+    color: var(--text-color);
+
+}
+
+.right .form-entry-align {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.right input {
+    background: transparent;
+    font-family: 'Poppins', 'Sans Serif';
+    color: var(--text-color);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 1px var(--dark-gray);
+    padding: 0 0 5px 0;
+    width: 200px;
+    margin: 0 0 1rem 0;
+}
+
+.right select {
+    background: transparent;
+    font-family: 'Poppins', 'Sans Serif';
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid var(--dark-gray);
+    padding: 0 0 5px 0;
+    width: 200px;
+}
+
+.right select:focus-visible {
+    outline: none;
+}
+
+.right input:focus-visible {
+    outline: none;
+}
+
+.button-align {
+    justify-content: center;
+    display: flex;
+    padding: 2.5rem 0rem 0rem 0rem;
+}   
+
+.right button {
+    width: 50%;
+    font-family: Poppins;
+    height: 2.5rem;
+    padding: 0px 20px 0px 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: var(--primary-color);
+    color: var(--white);
+    position: relative;
+    transition-duration: 0.5s;
+}
+
+.right button:hover {
+    box-shadow: var(--white) 0 0px 5px;
+    transition-duration: .3s;
+    background-image: linear-gradient(to right, var(--primary-color), var(--primary-color-dark));
+    height: 2.75rem;
+    cursor: pointer;
+    text-shadow: rgb(255, 255, 255) 0 0px 100px;
+    box-shadow: var(--primary-color-dark) 0px 0px 5px;
+    z-index: 1;
+}
+
+
+.right label {
+    font-size: 1rem;
+}
+
+.video {
+    padding: 1rem;
+    background: var(--secondary-color);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--white);
+}
+
+/* end of contact section */
+
+/* beginning of footer */
+
+.footericoncontent {
+    margin: 13px auto 0;
+    color: var(--white);
+    text-align: left;
+}
+
+.footer-icons {
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    transition: .3s;
+    background-color: black;
+}
+
+.footer-icons:hover {
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.footer-icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon-container a,
+i {
+    text-decoration: none;
+}
+
+.footer-icon-below-text {
+    padding-top: 0.85rem;
+    color: var(--gray);
+    font-size: .8rem;
+    text-align: center;
+}
+
+.footer {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    padding: 55px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footercontent {
+    margin: 0 auto;
+    color: var(--white);
+    text-align: left;
+}
+
+.footercontent h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    color: var(--bg-color);
+}
+
+.footercontent ul {
+    list-style-type: none;
+}
+
+.footercontent a {
+    color: var(--gray);
+    text-decoration: none;
+    position: relative;
+    padding: 0 10px 0 0;
+}
+
+.footercontent a:after {
+    content: "";
+    position: absolute;
+    background-color: var(--white);
+    height: 1.5px;
+    width: 0%;
+    left: 0;
+    bottom: -2.5px;
+    text-shadow: var(--white) 0 1px 30px;
+    transition: 0.7s;
+}
+
+.footercontent a:hover {
+    color: var(--white);
+    text-shadow: var(--white) 0 1px 30px;
+    transition-duration: .3s;
+}
+
+.footercontent a:hover:after {
+    width: 95%;
+}
+
+.footercontent .footerform {
+    display: flex;
+}
+
+.footercontent input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--gray);
+    outline: none;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-family: Poppins;
+    padding-right: 10px;
+    color: #e4e4e4ee;
+
+}
+
+.footercontent button {
+    font-family: Poppins;
+    height: 2.5rem;
+    padding: 0px 20px 0px 20px;
+    white-space: nowrap;
+    background-color: var(--gray);
+    border: none;
+}
+
+.footercontent button:hover {
+    box-shadow: var(--white) 0 1px 30px;
+    transition-duration: .3s;
+    border: var(--gray) 1px solid;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    cursor: pointer;
+}
+
+.footercontent p {
+    font-size: .8rem;
+    color: var(--gray);
+}
+
+.socialicons {
+    color: var(--white);
+}
+
+.footer-icons:hover .socialicons {
+    color: #000;
+    font-weight: bolder;
+}
+
+/* end of footer */
