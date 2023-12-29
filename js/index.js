@@ -61,6 +61,25 @@ ScrollReveal().reveal(".column", {
   interval: 200,
 });
 
+ScrollReveal().reveal(".testimonial-heading", {
+  delay: 0,
+  duration: 1000,
+  easing: "ease-in-out",
+  origin: "bottom",
+  distance: "200px",
+});
+
+ScrollReveal().reveal(".testimonial-container", {
+  delay: 0,
+  duration: 1000,
+  easing: "ease-in-out",
+  origin: "bottom",
+  distance: "200px",
+  interval: 200,
+});
+
+const element = document.querySelector(".card");
+element.scrollIntoView();
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
@@ -84,7 +103,7 @@ carousel.classList.remove("no-transition");
 // Add event listeners for the arrow buttons to scroll the carousel left and right
 arrowBtns.forEach(btn => {
     btn.addEventListener("click", () => {
-        carousel.scrollLeft += btn.id == "left-btn" ? -firstCardWidth : firstCardWidth;
+        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
     });
 });
 const dragStart = (e) => {
