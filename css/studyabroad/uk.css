@@ -147,7 +147,7 @@ nav img {
 /* hero-container start */
 
 .hero-container {
-  background-image: url('/assets/images/US.png');
+  background-image: url('/assets/images/UK.png');
   height: 535px;
   background-position: center;
   background-size: cover;
@@ -174,7 +174,7 @@ nav img {
   text-align: center;
   margin: auto;
   width: 700px;
-  transform: translate(0%, 125%);
+  transform: translate(0%, 12rem);
 }
 
 /* hero-container end */

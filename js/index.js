@@ -45,7 +45,7 @@ ScrollReveal().reveal(".footer", {
 });
 
 ScrollReveal().reveal(".service-heading", {
-  delay: 0,
+  delay: 1,
   duration: 1000,
   easing: "ease-in-out",
   origin: "bottom",
@@ -78,8 +78,6 @@ ScrollReveal().reveal(".testimonial-container", {
   interval: 200,
 });
 
-const element = document.querySelector(".card");
-element.scrollIntoView();
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;

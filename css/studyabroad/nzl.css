@@ -147,7 +147,7 @@ nav img {
 /* hero-container start */
 
 .hero-container {
-  background-image: url('/assets/images/US.png');
+  background-image: url('/assets/images/NZL.png');
   height: 535px;
   background-position: center;
   background-size: cover;
@@ -163,7 +163,7 @@ nav img {
 
 .hero-container h1 {
   color: var(--white);
-  transform: translate(15%, 50%);
+  transform: translate(5% , 50%);
   font-size: 100px;
   width: fit-content;
 }

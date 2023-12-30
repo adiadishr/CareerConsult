@@ -2,212 +2,157 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/contact.css">
-    <script src="https://kit.fontawesome.com/ee759840f5.js" crossorigin="anonymous"></script>
-    <title>Contact | Career Consult</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="../css/contact.css" />
+  <title>Contact Us</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://kit.fontawesome.com/ee759840f5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <nav>
-        <div><a href="index.html"><img src="/assets/images/logo.png" height="auto" width="200px"></a></div>
-        <ul class="navlinks">
-            <li class="links"><a href="index.html">Home</a></li>
-            <li class="links"><a href="testprep.html">Test Preparation</a></li>
-            <li class="dropdown">
-                <button class="dropbtn">Study Abroad ▼</button>
-                <div class="dropdown-content">
-                    <a href="/CareerConsult/Demo5 (current)/studyabroad/studyus.html">Study
-                        in US</a>
-                    <a href="/CareerConsult/Demo5 (current)/studyabroad/studyuk.html">Study
-                        in UK</a>
-                    <a href="/CareerConsult/Demo5 (current)/studyabroad/studycan.html">Study
-                        in Canada</a>
-                    <a href="/CareerConsult/Demo5 (current)/studyabroad/studyaus.html">Study
-                        in Australia </a>
-                    <a href="/CareerConsult/Demo5 (current)/studyabroad/studynzl.html">Study
-                        in New Zealand</a>
-                </div>
-            </li>
-        </ul>
+ 
+  <nav>
+    <div>
+      <a href="/pages/index.html"><img src="/assets/images/logo.png" height="auto" width="200px" /></a>
+    </div>
 
-        <div id="mySidenav" class="sidenav">
-            <ul class="sidenavlinks">
-                <li class="links"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                </li>
-                <li class="links"><a href="index.html">Home</a></li>
-                <li class="links"><a href="#">Testimonials</a></li>
-                <li class="links"><a href="#">Blog</a></li>
-                <li class="links"><a href="#">About Us</a></li>
-                <li class="links"><a href="contact.html">Contact</a></li>
-            </ul>
+    <ul class="navlinks">
+      <li class="links"><a href="/pages/index.html">Home</a></li>
+      <li class="links">
+        <a href="/pages/testpreparation.html">Test Preparation</a>
+      </li>
+      <li class="dropdown">
+        <button class="dropbtn">Study Abroad ▼</button>
+        <div class="dropdown-content">
+          <ul>
+            <a href="/pages/studyabroad/studyus.html">Study in US</a>
+            <a href="/pages/studyabroad/studyuk.html">Study in UK</a>
+            <a href="/pages/studyabroad/studycan.html">Study in Canada</a>
+            <a href="/pages/studyabroad/studyaus.html">Study in Australia
+            </a>
+            <a href="/pages/studyabroad/studynzl.html">
+              Study in New Zealand</a>
+          </ul>
         </div>
+      </li>
+    </ul>
 
-        <span class="sidenavbtn" onclick="openNav()">&#9776;</span>
+    <div id="mySidenav" class="sidenav">
+      <ul class="sidenavlinks">
+        <li class="links">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </li>
+        <li class="links"><a href="/pages/index.html">Home</a></li>
+        <li class="links"><a href="/pages/blog.html">Blog</a></li>
+        <li class="links"><a href="/pages/aboutus.html">About Us</a></li>
+        <li class="links"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
 
-    </nav>
+    <span class="sidenavbtn" onclick="openNav()">&#9776;</span>
+  </nav>
 
-    <section class="contact-container">
+  <div class="contact-heading">
+    <h1>Contact Us</h2>
+  </div>
 
-        <div class="top-text-wrapper">
-            <div class="top-text-wrapper-brightness">
-                <div class="top-text">
-                    <h1>Connect with us</h1>
-                    <p>Get in touch -<br>We'd love to respond to your queries and help you succeed!</p>
-                </div>
-            </div>
-        </div>
-        <div class="align-contact-box">
-            <div class="contact-box">
-                <div class="left">
-                    <h5>Reach us</h5>
+  <section class="contact-container">
+    <form action="" class="contact-form">
+      <div class="contact-form-title">
+        <h2>Get in touch</h2>
+        <hr>
+      </div>
+      <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+      <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+      <input type="text" name="phone" placeholder="Your Phone number" class="contact-inputs" required>
+      <select name="cars" class="contact-select">
+        <option value="Counseling">Volvo</option>
+        <option value="Study Abroad">Saab</option>
+        <option value="Documentation">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+      <button type="submit">Submit<i class="fa-solid fa-arrow-right-long"></i></button>
+    </form>
+  </section>
 
-                    <h4>Email</h4>
-                    <p>careerconsult2022@gmail.com</p>
+  <footer class="footer">
+    <div class="footer-icon-content">
+      <h5>Follow us</h5>
+      <div class="footer-icon-container">
+        <a href="https://www.facebook.com/careerconsultnepal" target="_blank">
+          <button class="footer-icons">
+            <i id="facebook" class="fa-brands fa-facebook-f socialicons"></i>
+          </button>
+        </a>
+        <a href="https://www.instagram.com/careerconsult.2022/" target="_blank">
+          <button class="footer-icons">
+            <i id="facebook" class="fa-brands fa-instagram socialicons"></i>
+          </button>
+        </a>
+        <a href="https://www.linkedin.com/company/career-consult-nepal/" target="_blank">
+          <button class="footer-icons">
+            <i id="facebook" class="fa-brands fa-linkedin-in socialicons"></i>
+          </button>
+        </a>
+      </div>
+      <div class="footer-icon-below-text">
+        <p>
+          Privacy Policy | Terms and Conditions © Career Consult 2024 <br />
+          All rights reserved <br />
+          Designed by
+          <a href="https://www.linkedin.com/in/aditya-shrestha-tech/" target="_blank">Aditya Shrestha</a>
+        </p>
+      </div>
+    </div>
 
-                    <h4>Phone</h4>
-                    <p>01-5913936</p>
+    <div class="footercontent">
+      <h5>Quick Links</h5>
+      <br />
+      <ul class="quick-links">
+        <li><a href="/pages/index.html"> > Home</a></li>
+        <li><a href="/pages/testpreparation.html"> > Test Preparation</a></li>
+        <li><a href="/pages/blog.html"> > Blog</a></li>
+        <li><a href="/pages/aboutus.html"> > About Us</a></li>
+        <li><a href="/pages/contact.html"> > Contact Us</a></li>
+      </ul>
+    </div>
 
-                    <h4>Address</h4>
-                    <p>New Baneshwor,<br>Near Global IME Bank</p>
+    <div class="footercontent">
+      <h5>Stay up to date with our newsletter</h5>
+      <br />
+      <form class="footerform">
+        <input type="text" placeholder="Enter your email-address" required />
+        <button type="submit" onclick="newsletter()">
+          <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+      <div class="newsletter-paragraph">
+        <p>
+          We'll send you the best most updated tips and tricks to guide you to
+          success!
+        </p>
+      </div>
+    </div>
 
-                </div>
+    <div class="footercontent">
+      <div class="footer-gradient">
+        <h5>Book a free appointment</h5>
+      </div>
+      <div class="appointment-content">
+        <p>
+          Unlock your future with Career Consult – Our expert advisors are
+          here to guide.
+        </p>
+      </div>
+      <div class="appointment-button-wrapper">
+        <button class="appointment-button">Book Now!</button>
+      </div>
+    </div>
+  </footer>
 
-                <div class="right">
-                    <h5>Your Details</h5>
-                    <form>
-
-                        <div class="form-entry-align">
-
-                            <div class="entry">
-                                <label for="name">Name:</label><br>
-                                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
-                            </div>
-
-                            <div class="entry">
-                                <label for="phone">Phone Number:</label><br>
-                                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                    placeholder="Enter your phone number" required><br>
-                            </div>
-
-                            <div class="entry">
-                                <label for="email">Email:</label><br>
-                                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
-                            </div>
-
-                            <div class="entry">
-                                <label for="objective">Objective:</label><br>
-                                <select id="objective" name="objective" required><br>
-                                    <option value="counselling">Counselling</option>
-                                    <option value="testpreparation">Test Preparation</option>
-                                    <option value="visa">Visa Application</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-                        <div class="button-align">
-                            <button type="submit">Submit</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="video">
-                    <h5>A Message From Us</h5>
-                    <video width="320" height="auto" controls autoplay muted>
-                        <source src="/assets/videos/mov.mp4" type="video/mp4">
-                    </video>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic dignissimos magni voluptatem. </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-
-        <div class="footericoncontent">
-
-            <img src="/CareerConsult/Demo5 (current)/assets/logo-white.png" height="auto" width="200px"
-                style="margin: -4rem 0 -4rem;">
-            <br>
-
-            <div class="footer-icon-container">
-                <a href="https://www.facebook.com/careerconsultnepal" target="_blank">
-                    <button class="footer-icons">
-                        <i id="facebook" class="fa-brands fa-facebook-f socialicons"></i>
-                    </button>
-                </a>
-                <a href="https://www.instagram.com/careerconsult.2022/" target="_blank">
-                    <button class="footer-icons">
-                        <i id="facebook" class="fa-brands fa-instagram socialicons"></i>
-                    </button>
-                </a>
-                <a>
-                    <button class="footer-icons">
-                        <i id="facebook" class="fa-brands fa-linkedin-in socialicons"></i>
-                    </button>
-                </a>
-
-            </div>
-
-            <p class="footer-icon-below-text">Follow us on our socials!</p>
-
-        </div>
-
-        <div class="footercontent">
-            <h5>Support</h5><br>
-            <ul>
-                <li><a href="#"> > Contact Us</a></li>
-                <li><a href="#"> > FAQ</a></li>
-                <li><a href="#"> > Book an appointment</a></li>
-                <li><a href="#"> > Our Location</a></li>
-                <!-- <li><a href="#"> > Contact Us</a></li> -->
-            </ul>
-        </div>
-
-        <div class="footercontent">
-            <h5>Quick Links</h5><br>
-            <ul>
-                <li><a href="index.html"> > Home</a></li>
-                <li><a href="#"> > Testimonials</a></li>
-                <li><a href="#"> > Blog</a></li>
-                <li><a href="#"> > Test Preparation</a></li>
-                <li><a href="#"> > About Us</a></li>
-            </ul>
-        </div>
-
-        <div class="footercontent">
-            <h5>Stay up to date with our newletter</h5><br>
-            <div class="footerform">
-                <form>
-                    <input type="text" placeholder="Enter your email-address">
-                </form>
-                <button type="submit" onclick="newsletter()">Submit</button>
-            </div>
-
-            <br>
-            <p>Privacy Policy | Terms and Conditions<br>
-                © Career Consult 2024, all rights reserved<br>
-
-            </p>
-
-        </div>
-
-    </footer>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-
+  <script src="/js/contact.js"></script>
 </body>
 
 </html>
