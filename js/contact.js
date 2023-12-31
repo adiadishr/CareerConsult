@@ -20,3 +20,27 @@ ScrollReveal().reveal(".footer", {
     duration: 1400,
     easing: "ease-in-out",
 });
+
+ScrollReveal().reveal(".contact-heading", {
+    delay: 600,
+    duration: 1400,
+    origin: "bottom",
+    distance: "200px",
+    easing: "ease-in-out",
+});
+
+ScrollReveal().reveal(".contact-form", {
+    delay: 800,
+    duration: 1400,
+    origin: "bottom",
+    distance: "200px",
+    easing: "ease-in-out",
+});
+
+ScrollReveal().reveal(".contact-details", {
+    delay: 900,
+    duration: 1400,
+    origin: "bottom",
+    distance: "200px",
+    easing: "ease-in-out",
+});
