@@ -38,19 +38,31 @@ ScrollReveal().reveal(".column", {
     interval: 200,
 });
 
-ScrollReveal().reveal(".testimonial-heading", {
-    delay: 0,
-    duration: 1000,
-    easing: "ease-in-out",
-    origin: "bottom",
-    distance: "200px",
-});
-
-ScrollReveal().reveal(".testimonial-container", {
-    delay: 0,
-    duration: 1000,
+ScrollReveal().reveal(".team-heading h1, h2", {
+    delay: 200,
+    duration: 1200,
     easing: "ease-in-out",
     origin: "bottom",
     distance: "200px",
     interval: 200,
 });
+
+ScrollReveal().reveal(".team-cards .col", {
+    delay: 400,
+    duration: 1200,
+    easing: "ease-in-out",
+    origin: "bottom",
+    distance: "200px",
+    interval: 400,
+});
+
+ScrollReveal().reveal(".info", {
+    delay: 100,
+    duration: 1200,
+    easing: "ease-in-out",
+    origin: "bottom",
+    distance: "200px",
+    interval: 400,
+});
+
+
