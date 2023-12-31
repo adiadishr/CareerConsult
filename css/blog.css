@@ -144,212 +144,163 @@ nav img {
 
 /* nav end */
 
-/* contact-container start */
+/* banner start */
 
-.contact-heading {
-  text-align: center;
-  padding: 7rem 0;
-  background-image: linear-gradient(to right,
-      var(--primary-color),
-      var(--secondary-color));
-  filter: brightness(150%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -1;
-  display: grid;
-}
-
-.contact-heading h1 {
-  font-size: 3.5rem;
-}
-
-.contact-container {
+.banner {
   max-width: var(--max-width);
-  margin: 0 auto 7.5rem;
-  padding: 0rem 1rem 1rem 1rem;
-  height: 30rem;
+  margin:auto;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2.5fr;
+  padding: 5rem 0 0 0;
 }
 
-.contact-form {
-  border: 1px solid var(--dark-gray);
-  padding: 2rem;
-  height: inherit;
-  background: var(--white);
+.banner img {
+  width: 50%;
+  height: auto;
 }
 
-.contact-form-title h2 {
-  font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  background-image: linear-gradient(to right,
-      var(--primary-color),
-      var(--secondary-color));
-  filter: brightness(150%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -1;
-}
-
-.contact-form-title hr {
-  border: none;
-  width: 160px;
-  height: 5px;
-  border-radius: 10px;
-  margin-bottom: 3.5rem;
-  background-color: var(--dark-gray);
-}
-
-.contact-inputs {
-  width: 400px;
-  height: 50px;
-  outline: none;
-  padding: 0 0 0 1.5rem;
-  font-weight: 500;
-  color: var(--dark-gray);
-  border-radius: 50px;
-  margin-bottom: 1rem;
-  align-items: center;
-  border: 1.5px solid var(--dark-gray);
-}
-
-.contact-select {
-  width: 400px;
-  height: 50px;
-  border-radius: 50px;
-  padding: 0 1.5rem 0 1.5rem;
-  color: var(--dark-gray);
-  border: 1.5px solid var(--dark-gray);
-}
-
-.contact-select option {
-  color: var(--dark-gray);
-  padding-top: 100px;
-}
-
-.contact-form button {
-  display: flex;
-  align-items: center;
-  padding: 15px 30px;
-  font-size: 16px;
-  color: var(--white);
-  gap: 10px;
-  border: none;
-  border-radius: 50px;
-  background: var(--dark-gray);
-  cursor: pointer;
-  margin-top: 2rem;
-  font-family: 'Poppins', 'Sans Serif';
-  transition-duration: .5s;
-}
-
-.contact-form button:hover {
-  box-shadow: 0 0 5px var(--dark-gray);
-  scale: 1.01;
-  background: linear-gradient(-90deg, var(--primary-color), var(--dark-gray));
-  /* background: var(--primary-color-dark); */
-  transition-duration: .5s;
-}
-
-.contact-form button:hover i {
-  transform: scaleX(1.7);
-  transition: .5s;
-  padding-left: 5px;
-}
-
-.contact-details {
-  border: 1px solid var(--dark-gray);
-  border-right: none;
-  padding: 2rem;
-  height: inherit;
-  background: var(--white);
-  right: 0;
-  position: absolute;
-  width: 45rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  z-index: -1000;
-}
-
-.contact-details-title h2 {
-  font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  background-image: linear-gradient(to right,
-      var(--primary-color),
-      var(--secondary-color));
-  filter: brightness(150%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -1;
-}
-
-.contact-details-content {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
-}
-
-.contact-details-row h5 {
+.banner-text i, h3 {
   display: inline;
-  font-size: 1rem;
-  color: var(--dark-gray);
+  font-size: 1.5rem;
 }
 
-.contact-details-row i {
+.banner-text {
+  color: var(--text-color);
+}
+
+.banner-text i {
+  padding-right: 1rem;
+}
+
+.banner-text p {
+  font-size: .8rem;
+  padding: 1rem 0 0 3rem;
+}
+
+/* banner end */
+
+/* feature start */
+
+.feature {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 0 0 0;
+}
+
+.left {
+  color: var(--text-color);
+}
+
+.left i,
+h5 {
   display: inline;
+  font-size: 1.5rem;
 }
 
-.contact-details-row i {
-  padding-right: .5rem;
+.left i {
+  padding-right: 1rem;
 }
 
-.contact-details-row p,
-.contact-details-row p i {
-  padding-top: .8rem;
+.left p {
+  padding: 1rem 3rem 0 3rem;
   font-size: .8rem;
 }
 
-.contact-details-row p i,
-.contact-details-row p a {
+.right {
   color: var(--text-color);
-  cursor: pointer;
 }
 
-.contact-footer {
-  margin-top: 5rem;
+.featured-article {
+  background: var(--white);
+  padding: 1rem;
+  border: 1px solid var(--text-color);
+  transform: translatey(-1rem);
 }
 
-/* .contact-details-right {
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  gap: 1rem;
+.right h5 {
+  font-size: 1.5rem;
 }
 
-.contact-details-right-title h2 {
-  font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 5px;
+.attribution {
+  font-size: .8rem;
+  padding: .25rem 0;
+}
+
+.attribution .a-by{
+  text-align: left;
+  padding-right: 14.5rem;
+}
+
+.attribution .a-date{
   text-align: right;
 }
 
-.contact-details-right-title h2::after {
-  content: "";
-  width: 100%;
-  height: .2em;
-  background: red;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  border: 1px red solid;
-  
-} */
+.right p {
+  font-size: .8rem;
+  text-align: justify;
+}
 
-/* contact-container end */
+.right a{
+font-size: .8rem;
+}
+
+/* feature end */
+
+/* catalog start */
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: auto;
+  max-width: var(--max-width);
+  gap: 2rem;
+  padding: 2.5rem 0 5rem 0;
+}
+
+.entry {
+  background: var(--white);
+  padding: 1rem;
+  border: 1px solid var(--text-color);
+  transform: translatey(-1rem);
+}
+
+.entry img {
+  width: fit-content;
+  height: auto;
+}
+
+.entry-attribution h5 {
+  font-size: 1.5rem;
+}
+
+.entry-attribution {
+  font-size: .8rem;
+  padding: .25rem 0;
+}
+
+.entry-attribution .e-by{
+  text-align: left;
+  padding-right: 14.5rem;
+}
+
+.entry-attribution h4 {
+  display: inline;
+  font-weight: 400;
+}
+
+
+.entry p {
+  font-size: .8rem;
+  text-align: justify;
+}
+
+.entry a{
+font-size: .8rem;
+}
+
+/* catalog end */
 
 /* footer start */
 

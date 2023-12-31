@@ -22,7 +22,7 @@ ScrollReveal().reveal(".footer", {
 });
 
 ScrollReveal().reveal(".contact-heading", {
-    delay: 600,
+    delay: 200,
     duration: 1400,
     origin: "bottom",
     distance: "200px",
@@ -30,7 +30,7 @@ ScrollReveal().reveal(".contact-heading", {
 });
 
 ScrollReveal().reveal(".contact-form", {
-    delay: 800,
+    delay: 400,
     duration: 1400,
     origin: "bottom",
     distance: "200px",
@@ -38,7 +38,7 @@ ScrollReveal().reveal(".contact-form", {
 });
 
 ScrollReveal().reveal(".contact-details", {
-    delay: 900,
+    delay: 600,
     duration: 1400,
     origin: "bottom",
     distance: "200px",
