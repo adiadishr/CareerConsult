@@ -114,7 +114,7 @@ nav img {
   height: 170vh;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   top: 0;
   right: 0;
   background-color: var(--white);
@@ -147,11 +147,14 @@ nav img {
 /* banner start */
 
 .banner {
-  max-width: var(--max-width);
-  margin:auto;
+  max-width: 100%;
+  height: 70vh;
+  grid-template-columns: 2fr 1fr;
+  background-image: url(/assets/images/blog-banner.png);
+  background-position: center;
+  background-size: cover;
   display: grid;
-  grid-template-columns: 1fr 2.5fr;
-  padding: 5rem 0 0 0;
+  align-items: center;
 }
 
 .banner img {
@@ -159,22 +162,27 @@ nav img {
   height: auto;
 }
 
-.banner-text i, h3 {
-  display: inline;
-  font-size: 1.5rem;
-}
-
 .banner-text {
-  color: var(--text-color);
+  color: var(--white);
+  align-items: center;
+  display: grid;
+  height: 30%;
+  padding-left: 15%;
 }
 
 .banner-text i {
   padding-right: 1rem;
 }
 
+.banner-text i,
+.banner-text h3 {
+  display: inline;
+  font-size: 1.5rem;
+}
+
 .banner-text p {
   font-size: .8rem;
-  padding: 1rem 0 0 3rem;
+  padding-left: 2.5rem;
 }
 
 /* banner end */
@@ -183,67 +191,94 @@ nav img {
 
 .feature {
   display: grid;
-  grid-template-columns: 2.5fr 1fr;
+  grid-template-columns: .45fr 1fr;
   max-width: var(--max-width);
   margin: auto;
-  padding: 5rem 0 0 0;
-}
-
-.left {
-  color: var(--text-color);
-}
-
-.left i,
-h5 {
-  display: inline;
-  font-size: 1.5rem;
-}
-
-.left i {
-  padding-right: 1rem;
-}
-
-.left p {
-  padding: 1rem 3rem 0 3rem;
-  font-size: .8rem;
+  padding: 5rem 0 7.5rem 0;
+  column-gap: 5%;
 }
 
 .right {
   color: var(--text-color);
 }
 
+.right i,
+.right h5 {
+  display: inline;
+  font-size: 1.5rem;
+}
+
+.right i {
+  padding-right: 1rem;
+}
+
+.right p {
+  padding: 1rem 3rem 0 3rem;
+  font-size: .8rem;
+}
+
+.left {
+  color: var(--text-color);
+}
+
+.left a{
+  text-decoration: none;
+  color: initial;
+}
+
 .featured-article {
   background: var(--white);
   padding: 1rem;
-  border: 1px solid var(--text-color);
+  border-radius: 10px;
   transform: translatey(-1rem);
+  position: relative;
+  box-shadow: 0 0 10px #00000042;
+  transition-duration: .5s;
 }
 
-.right h5 {
+.featured-article:hover{
+  scale: 1.05;
+  transition-duration: .5s;
+}
+
+.left h5 {
   font-size: 1.5rem;
+}
+
+.left .img {
+  width: 100%;
+  margin: 1rem 0;
+  background-image: url(/assets/images/featured-article.png);
+  background-position: center;
+  background-size: cover;
+  height: 5rem;
 }
 
 .attribution {
   font-size: .8rem;
   padding: .25rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--dark-gray);
 }
 
-.attribution .a-by{
+.attribution .a-by {
   text-align: left;
-  padding-right: 14.5rem;
 }
 
-.attribution .a-date{
+.attribution .a-date {
   text-align: right;
 }
 
-.right p {
+.left p {
   font-size: .8rem;
   text-align: justify;
 }
 
-.right a{
-font-size: .8rem;
+.featured-article .readmore, .entry .readmore {
+  font-size: .8rem;
+  text-decoration: underline;
+  color: var(--primary-color);
 }
 
 /* feature end */
@@ -251,54 +286,60 @@ font-size: .8rem;
 /* catalog start */
 
 .catalog {
+padding: 0 0 5rem 0;
+}
+
+.catalog h1{
+  text-align: center;
+  padding: 0 0 0 0;
+  color: var(--text-color);
+  font-size: 2.75rem;
+}
+
+ .catalog-list {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, .45fr);
   margin: auto;
   max-width: var(--max-width);
   gap: 2rem;
-  padding: 2.5rem 0 5rem 0;
+  padding: 5rem 0 0 0;
 }
 
 .entry {
   background: var(--white);
   padding: 1rem;
-  border: 1px solid var(--text-color);
+  border-radius: 10px;
   transform: translatey(-1rem);
+  position: relative;
+  box-shadow: 0 0 10px #00000042;
+  transition-duration: .5s;
+  width: 90%;
+  justify-self: center;
 }
 
-.entry img {
-  width: fit-content;
-  height: auto;
+.entry:hover {
+  scale: 1.05;
+  cursor:crosshair;
 }
 
-.entry-attribution h5 {
+.entry h5 {
   font-size: 1.5rem;
 }
 
-.entry-attribution {
-  font-size: .8rem;
-  padding: .25rem 0;
+.entry .img {
+  width: 100%;
+  margin: 1rem 0;
+  background-image: url(/assets/images/featured-article.png);
+  background-position: center;
+  background-size: cover;
+  height: 5rem;
 }
-
-.entry-attribution .e-by{
-  text-align: left;
-  padding-right: 14.5rem;
-}
-
-.entry-attribution h4 {
-  display: inline;
-  font-weight: 400;
-}
-
 
 .entry p {
   font-size: .8rem;
   text-align: justify;
 }
 
-.entry a{
-font-size: .8rem;
-}
 
 /* catalog end */
 

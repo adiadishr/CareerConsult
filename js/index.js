@@ -39,7 +39,7 @@ ScrollReveal().reveal(".rightside", {
 });
 
 ScrollReveal().reveal(".footer", {
-  delay: 1000,
+  delay: 600,
   duration: 1400,
   easing: "ease-in-out",
 });
