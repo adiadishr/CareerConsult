@@ -161,7 +161,7 @@ nav img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3.5rem;
-  background-color: var(--bg-color);
+  background-color: var(--gray);
   justify-content: center;
 }
 
@@ -242,7 +242,8 @@ nav img {
 }
 
 #verticalbanner {
-  transform: translate(25.5%, -2.25%);
+ top: -32px;
+ right: 0px;
   width: 515px;
   z-index: -1;
   position: relative;
