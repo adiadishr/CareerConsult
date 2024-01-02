@@ -21,34 +21,22 @@ ScrollReveal().reveal(".footer", {
   easing: "ease-in-out",
 });
 
-ScrollReveal().reveal(".container-one-heading", {
-  delay: 0,
-  duration: 1000,
-  easing: "ease-in-out",
-  origin: "bottom",
-  distance: "200px",
-});
+const allIndicator = document.querySelectorAll('.indicator li');
+const allContent = document.querySelectorAll('.content li');
 
-ScrollReveal().reveal(".sub-container", {
-  delay: 200,
-  duration: 1000,
-  easing: "ease-in-out",
-  origin: "bottom",
-  distance: "200px",
-  interval: 200,
-});
+allIndicator.forEach(item=> {
+  item.addEventListener('click', function () {
+    const content = document.querySelector(this.dataset.target);
 
-ScrollReveal().reveal("#verticalbanner", {
-  delay: 400,
-  duration: 1500,
-  easing: "ease-in-out",
-});
+    allIndicator.forEach(i=> {
+      i.classList.remove('active');
+    })
 
-ScrollReveal().reveal(".content", {
-    delay: 400,
-    duration: 1500,
-    easing: "ease-in-out",
-    interval: 200,
-    origin: "bottom",
-    distance: "200px"
-  });
+    allContent.forEach(i=> {
+      i.classList.remove('active');
+    })
+
+    content.classList.add('active');
+    this.classList.add('active');
+  })
+})
