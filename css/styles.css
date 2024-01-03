@@ -264,16 +264,6 @@ nav img {
 .service-heading {
   text-align: center;
   padding: 0 0 5rem 0;
-  background-image: linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--secondary-color)
-  );
-  filter: brightness(150%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -1;
 }
 
 .service-heading h1 {
@@ -298,14 +288,10 @@ nav img {
   background: linear-gradient(var(--white) 50%, var(--primary-color) 50%);
   background-size: 100% 200%;
   background-position: 0 2.5%;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   transition: 0.5s;
-}
-
-.services-container .card:hover {
-  transform: translate(0%, -7.5%);
 }
 
 .services-container h3 {
@@ -338,13 +324,17 @@ nav img {
   background-position: 0 100%;
 }
 
+.services-container .card:hover{
+  transform: translate(0%, -7.5%);
+}
+
 .card:hover .icon-wrapper {
   background-color: var(--white);
   color: var(--primary-color);
 }
 
 .card:hover h3 {
-  color: #ffffff;
+  color: var(--white);
   transition-duration: 0.5s;
 }
 
@@ -357,17 +347,6 @@ nav img {
 .testimonial-heading {
   text-align: center;
   padding: 3rem 0 4.5rem 0;
-  background-image: linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--secondary-color)
-  );
-  filter: brightness(150%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -1;
-  display: grid;
 }
 
 .testimonial-heading h1 {
@@ -461,7 +440,7 @@ nav img {
   background: var(--white);
   cursor: pointer;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 20px;
   padding: 2.5rem 0rem 0;
 }
 .carousel .card .img {
