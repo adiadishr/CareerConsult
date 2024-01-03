@@ -284,6 +284,9 @@ nav img {
 
 .tab-buttons{
   transform: translateY(15px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 23%;
 }
 
 .tab-button{
@@ -296,6 +299,10 @@ nav img {
   transition: filter 250ms;
   user-select: none;
   touch-action: manipulation;
+ }
+
+ .tab-buttons a{
+  text-decoration: none;
  }
  
  .shadow {

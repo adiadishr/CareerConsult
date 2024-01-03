@@ -145,301 +145,155 @@ nav img {
 
 /* nav end */
 
-/* team-container start */
+/* about-us-container start */
 
-.team-container {
+.about-us-container {
   max-width: var(--max-width);
   margin: auto;
-  padding-bottom: 6rem;
+  color: var(--text-color);
 }
 
-.team-container h2 {
-  text-align: center;
-  padding: 5rem 0 0 0;
-  font-weight: 200;
-  color: var(--dark-gray);  
-  font-size: 1.5rem;
-}
-
-.team-container h1 {
-  font-size: 2.75rem;
-  padding: 0 0 5rem 0;
-  text-align: center;
-  color: var(--primary-color);
-  z-index: -1000;
-}
-
-.team-cards {
+.about-us-content-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  margin: 0 auto;
-  position: relative;
-}
-
-.team-container .col {
-  margin: auto;
-}
-
-.team-card {
-  width: 100%;
-  height: 27rem;
-  padding: 2em 1.5em;
-  background: var(--white);
-  background-size: 100% 200%;
-  background-position: 0 2.5%;
-  border-radius: 5px;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
-  transition: .7s;
-  text-align: center;
-}
-
-.team-container .team-card:hover {
-  transform: translate(0%, -2.5%);
-}
-
-.team-card h5 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--primary-color-dark);
-  margin: 1rem 0 0.5rem;
-  letter-spacing: normal;
-}
-
-.team-card p {
-  font-size: .8rem;
-  font-weight: 400;
-}
-
-.team-card img {
-  background-color: var(--primary-color);
-  position: relative;
-  margin: -10px auto 30px;
-  font-size: 30px;
-  height: 15rem;
-  width: 15rem;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-}
-
-.team-social-links {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 1rem 0;
-}
-
-.team-social-links a {
-  text-decoration: none;
-}
-
-.team-social-links button {
-  width: 40px;
-  height: 40px;
-  display: flex;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
   align-items: center;
-  justify-content: center;
-  border: 1px solid var(--dark-gray);
-  border-radius: 40px;
-  transition: 0.3s;
-  background-color: var(--white);
-  color: var(--dark-gray);
 }
 
-.team-social-links button:hover {
-  transition: 0.3s;
-  background-color: var(--dark-gray);
-  cursor: pointer;
+.about-us-content {
+  padding: 0 0 0 4.5rem;
 }
 
-.team-social-links button:hover i {
-  color: var(--white);
-}
-
-/* team-container end */
-
-/* timeline-container start */
-
-.timeline-container {
-  display: flex;
-  justify-content: center;
-  background-color: var(--white);
-}
-
-.timeline {
-  margin: 4px auto;
-}
-
-.timeline-container .card {
-  position: relative;
-  max-width: 400px;
-}
-
-.timeline-container .card:nth-child(odd) {
-  padding: 30px 0 30px 30px;
-}
-
-.timeline-container .card:nth-child(even) {
-  padding: 30px 30px 30px 0;
-}
-
-.timeline-container .card::before {
-  content: "";
-  position: absolute;
-  width: 50%;
-  border: solid var(--primary-color);
-}
-
-.timeline-container .card:nth-child(odd)::before {
-  left: 0px;
-  top: -4.5px;
-  bottom: -4.5px;
-  border-width: 5px 0 5px 5px;
-  border-radius: 50px 0 0 50px;
-}
-
-.timeline-container .card:nth-child(even)::before {
-  right: 0;
-  top: 0;
-  bottom: 0;
-  border-width: 5px 5px 5px 0;
-  border-radius: 0 50px 50px 0;
-}
-
-.timeline-container .card:first-child::before {
-  border-top: 0;
-  border-top-left-radius: 0;
-}
-
-/* Removing the border if it is the last card  and it's odd */
-.timeline-container .card:last-child:nth-child(odd)::before {
-  border-bottom: 0;
-  border-bottom-left-radius: 0;
-}
-
-/* Removing the border if it is the last card  and it's even */
-.timeline-container .card:last-child:nth-child(even)::before {
-  border-bottom: 0;
-  border-bottom-right-radius: 0;
-}
-
-/* Information about the timeline */
-.info {
-  display: flex;
-  flex-direction: column;
-  background: var(--dark-gray);
-  color: var(--gray);
-  border-radius: 30px;
-  padding: 20px;
-}
-
-.info h3 {
-  font-size: 1rem;
-  padding-bottom: .5rem;
-}
-
-.info p {
-  font-size: .8rem;
-}
-
-/* Title of the card */
-.title {
-  color: var(--white);
-  position: relative;
-}
-
-/* Timeline dot  */
-.title::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: white;
-  border-radius: 999px;
-  border: 3px solid var(--primary-color-dark);
-}
-
-/* text right if the card is even  */
-.timeline-container .card:nth-child(even)>.info>.title {
+.about-us-heading h1 {
+  font-size: 2.75rem;
   text-align: center;
+  padding-bottom: 1rem;
 }
 
-/* setting dot to the left if the card is odd */
-.timeline-container .card:nth-child(odd)>.info>.title::before {
-  left: -55px;
+.about-us-content p {
+  font-size: 1rem;
+  text-align: justify;
 }
 
-/* setting dot to the right if the card is odd */
-.timeline-container .card:nth-child(even)>.info>.title::before {
-  right: -55px;
+.about-us-illustration img {
+  width: 450px;
+  height: auto;
 }
 
-/* timeline end */
+/* about-us-container end */
 
-/* services-container start */
+/* infographic-container start */
 
-.services-container {
+.infographic-container {
+  background-color: var(--primary-color-dark);
+  height: 300px;
+  margin-top: -20px;
+}
+
+.infographic-content-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  max-width: var(--max-width);
+  margin: auto;
+  color: var(--white);
+}
+
+.infographic-content-container h3 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.infographic-icon-container-wrapper {
+  display: grid;
+  height: 300px;
+  align-items: center;
+  margin-left: 3.5rem;
+}
+
+.infographic-icon-container {
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  width: 250px;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.infographic-icon-container i {
+  font-size: 125px;
+}
+
+.infographic-container-text {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  column-gap: 5rem;
+  width: 80%;
+  margin-left: 20%;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.infographic-container-count h3 {
+  font-size: 5rem !important;
+}
+
+/* infographic-container end */
+
+/* vales-container start */
+
+.values-container {
   margin: 0rem auto;
   width: 90%;
-  padding: 2rem 0 7rem;
+  padding: 2rem 0 2rem;
 }
 
-.service-heading {
+.values-heading {
   text-align: center;
-  padding: 2.5rem 0 5rem 0;
-  background-image: linear-gradient(to right,
-      var(--primary-color),
-      var(--secondary-color));
-  filter: brightness(150%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -1;
+  padding: 2rem 0 2rem 0;
 }
 
-.service-heading h1 {
+.values-heading h1 {
   font-size: 2.75rem;
-  padding-top: 2.5rem;
 }
 
-.services-container .row {
+.values-heading p {
+  font-size: .8rem;
+}
+
+.values-container .row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
-.services-container .column {
+.values-container .column {
   width: 100%;
   text-align: center;
 }
 
-.services-container .card {
-  width: 95%;
+.values-container .card {
+  width: 100%;
   height: 95%;
   padding: 2em 1.5em;
   background: linear-gradient(var(--white) 50%, var(--primary-color) 50%);
   background-size: 100% 200%;
   background-position: 0 2.5%;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   transition: 0.5s;
 }
 
-.services-container .card:hover {
-  transform: translate(0%, -7.5%);
-}
-
-.services-container h3 {
+.values-container h3 {
   font-size: 20px;
   font-weight: 600;
   color: var(--primary-color-dark);
   margin: 1rem 0 0.5rem;
 }
 
-.services-container p {
+.values-container p {
   color: var(--dark-gray);
   font-size: 0.8rem;
 }
@@ -462,22 +316,35 @@ nav img {
   background-position: 0 100%;
 }
 
+.values-container .card:hover{
+  transform: translate(0%, -7.5%);
+}
+
 .card:hover .icon-wrapper {
   background-color: var(--white);
   color: var(--primary-color);
 }
 
 .card:hover h3 {
-  color: #ffffff;
+  color: var(--white);
   transition-duration: 0.5s;
 }
 
-.services-container .card:hover p {
+.values-container .card:hover p {
   color: #f0f0f0;
 }
 
-/* services-container end */
+/* values-container end */
 
+/* quote-container start */
+
+.quote-container {
+  background-color: var(--primary-color-dark);
+  height: 300px;
+  margin-top: -20px;
+}
+
+/* quote-container end */
 
 /* footer start */
 
