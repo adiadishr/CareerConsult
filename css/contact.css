@@ -146,28 +146,10 @@ nav img {
 
 /* contact-container start */
 
-.contact-heading {
-  text-align: center;
-  padding: 7rem 0;
-  background-image: linear-gradient(to right,
-      var(--primary-color),
-      var(--secondary-color));
-  filter: brightness(150%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -1;
-  display: grid;
-}
-
-.contact-heading h1 {
-  font-size: 3.5rem;
-}
-
 .contact-container {
   max-width: var(--max-width);
   margin: 0 auto 7.5rem;
-  padding: 0rem 1rem 1rem 1rem;
+  padding: 5rem 1rem 5rem 1rem;
   height: 30rem;
   display: grid;
   grid-template-columns: 1fr 3fr;

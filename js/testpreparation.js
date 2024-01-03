@@ -15,8 +15,50 @@ ScrollReveal().reveal("nav", {
   reset: true,
 });
 
+ScrollReveal().reveal(".testprep-heading", {
+  delay: 200,
+  duration: 1400,
+  origin: "bottom",
+  distance: "200px",
+  easing: "ease-in-out",
+});
+
+ScrollReveal().reveal(".sub-left", {
+  delay: 200,
+  duration: 1400,
+  origin: "bottom",
+  distance: "200px",
+  easing: "ease-in-out",
+  interval: 400
+});
+
+ScrollReveal().reveal(".sub-right", {
+  delay: 400,
+  duration: 1400,
+  origin: "bottom",
+  distance: "200px",
+  easing: "ease-in-out",
+  interval: 400
+});
+
+ScrollReveal().reveal(".tab-heading h1 ", {
+  delay: 600,
+  duration: 1400,
+  origin: "bottom",
+  distance: "200px",
+  easing: "ease-in-out",
+});
+
+ScrollReveal().reveal(".container", {
+  delay: 600,
+  duration: 1400,
+  origin: "bottom",
+  distance: "200px",
+  easing: "ease-in-out",
+});
+
 ScrollReveal().reveal(".footer", {
-  delay: 300,
+  delay: 600,
   duration: 1400,
   easing: "ease-in-out",
 });
