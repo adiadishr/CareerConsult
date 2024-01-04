@@ -30,6 +30,14 @@ ScrollReveal().reveal(".intro", {
   distance: "100px",
 });
 
+ScrollReveal().reveal(".learnmore", {
+  delay: 0,
+  duration: 1400,
+  easing: "ease-in-out",
+  origin: "top",
+  distance: "100px",
+});
+
 ScrollReveal().reveal(".rightside", {
   delay: 500,
   duration: 1000,
@@ -76,6 +84,12 @@ ScrollReveal().reveal(".testimonial-container", {
   origin: "bottom",
   distance: "200px",
   interval: 200,
+});
+
+ScrollReveal().reveal(".infographic-container", {
+  delay: 0,
+  duration: 1000,
+  easing: "ease-in-out",
 });
 
 const wrapper = document.querySelector(".wrapper");
