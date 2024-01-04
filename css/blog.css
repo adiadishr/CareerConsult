@@ -335,6 +335,33 @@ padding: 0 0 5rem 0;
   height: 5rem;
 }
 
+.entry .img1{
+  width: 100%;
+  margin: 1rem 0;
+  background-image: url(/assets/images/entry-1.png);
+  background-position: center;
+  background-size: cover;
+  height: 5rem;
+}
+
+.entry .img2{
+  width: 100%;
+  margin: 1rem 0;
+  background-image: url(/assets/images/entry-2.png);
+  background-position: center;
+  background-size: cover;
+  height: 5rem;
+}
+
+.entry .img3{
+  width: 100%;
+  margin: 1rem 0;
+  background-image: url(/assets/images/entry-3.png);
+  background-position: center;
+  background-size: cover;
+  height: 5rem;
+}
+
 .entry p {
   font-size: .8rem;
   text-align: justify;
