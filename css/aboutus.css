@@ -188,9 +188,17 @@ nav img {
   color: var(--dark-gray);
 }
 
+.about-us-illustration {
+  position: relative;
+  z-index: -1000;
+}
+
+
 .about-us-illustration img {
   width: 450px;
   height: auto;
+  position: relative;
+  z-index: -1000;
 }
 
 /* about-us-container end */
