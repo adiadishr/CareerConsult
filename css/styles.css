@@ -29,7 +29,7 @@ body {
 nav {
   max-width: 100%;
   padding: 0rem 6rem 0rem 2.65rem;
-  height: 120px;
+  height: 7.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -129,6 +129,10 @@ nav img {
   top: 29px;
 }
 
+.querylink {
+  display: none;
+}
+
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -150,11 +154,16 @@ nav img {
   max-width: var(--max-width);
   margin: 80px auto 0px;
   padding: 1rem;
-  height: 460px;
+  height: 25rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   place-content: center;
+  margin-top: 5rem;
+}
+
+.hiddenlogo {
+  display: none;
 }
 
 .contentcontainer {
@@ -181,6 +190,7 @@ nav img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: -1;
+  margin-top: 5rem;
 }
 
 .heading1 {
@@ -228,7 +238,7 @@ nav img {
 
 .imagecontainer img {
   width: 100%;
-  max-width: 300px;
+  max-width: 20vw;
   margin: auto;
   border-radius: 10px;
 }
@@ -270,6 +280,13 @@ nav img {
   height: 300px;
   margin-top: -20px;
   margin-bottom: 5rem;
+}
+
+
+@keyframes quotegradient {
+  0%{background-position:0% 51%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 51%}
 }
 
 .infographic-content-container {
@@ -331,7 +348,7 @@ nav img {
 }
 
 .infographic-container-count h3 {
-  font-size: 5rem !important;
+  font-size: 5rem;
 }
 
 /* infographics-container end */
@@ -563,19 +580,6 @@ nav img {
   text-align: justify;
 }
 
-@media screen and (max-width: 900px) {
-  .wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .wrapper .carousel {
-    grid-auto-columns: 100%;
-  }
-}
-
-
 /* testimonial-container end */
 
 /* footer start */
@@ -793,3 +797,20 @@ i {
 }
 
 /* footer end */
+
+/* media queries start */
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+
+/* media queries end */
