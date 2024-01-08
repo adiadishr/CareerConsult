@@ -1,0 +1,39 @@
+@media(max-width: 1024px) {
+
+}
+
+@media(max-width: 450px) {
+    nav {
+        justify-content: space-between;
+        padding: 0rem 2rem 0rem 0rem;
+    }
+
+    .navlogo {
+        display: block;
+    }
+
+    .navlinks{
+        display: none;
+    }
+
+    .querylink {
+        display: block;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 1rem 2rem 5rem 2rem;
+    }
+
+    .footercontent {
+        text-align: center;
+    }
+
+    .footercontent h5{
+        text-align: center;
+    }
+
+    .footerform{
+        justify-content: center;
+    }
+}

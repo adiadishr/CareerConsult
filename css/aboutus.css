@@ -38,6 +38,10 @@ nav {
   background-color: var(--white);
 }
 
+.querylink {
+  display: none;
+}
+
 nav img {
   padding-top: 2rem;
 }
@@ -152,7 +156,6 @@ nav img {
   max-width: var(--max-width);
   margin: auto;
   color: var(--text-color);
-  height: 90dvh;
 }
 
 .about-us-content-container {

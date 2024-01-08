@@ -1,0 +1,17 @@
+@media(max-width: 450px) {
+
+    .contact-form {
+        width: fit-content;
+    }
+
+    .contact-container{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .contact-details{
+        position: relative;
+        z-index: 0;
+        width: fit-content;
+    }
+}

@@ -1,0 +1,38 @@
+@media screen and (max-width:450px) {
+
+    .testprep-heading{
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .testprep-content-container {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2.5rem;
+    }
+
+    .testpreparation-container {
+        max-width: 400px;
+        margin:auto;
+    }
+
+    .sub-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sub-right h5{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    .testpreparation-container {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .testpreparation-container {
+        max-width: 390px;
+    }
+}

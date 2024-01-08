@@ -1,0 +1,114 @@
+@media(max-width: 450px) {
+    .about-us-container {
+        max-width: 400px;
+        height: fit-content;
+        padding-top: 2rem;
+        z-index: -1000;
+        position: relative;
+    }
+
+    .about-us-content-container {
+        grid-template-columns: 1fr;
+        max-width: fit-content;
+        margin: auto;
+        justify-items: center;
+    }
+
+    .about-us-content {
+        padding: 0;
+    }
+
+    .about-us-content h1 {
+        font-size: 2.75rem;
+        text-align: center;
+    }
+
+    .about-us-content p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .about-us-illustration img {
+        width: 300px;
+    }
+
+    .infographic-container {
+        display: grid;
+    }
+
+    .infographic-content-container {
+        grid-template-columns: 1fr 0fr;
+    }
+
+    .infographic-icon-container-wrapper,
+    .infographic-icon-container,
+    .infographic-icon-container i {
+        display: none;
+    }
+
+    .infographic-container-text {
+        column-gap: 3.5rem;
+    }
+
+    .infographic-container-count h3 {
+        font-size: 2rem;
+    }
+
+    .infographic-container-tagline h3 {
+        font-size: 1.5rem;
+    }
+
+    .values-container .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .quote-container {
+        height: 400px;
+    }
+
+    .quotation-mark-1 i {
+        /* transform: translate(30px,-10px); */
+        display: none;
+    }
+
+    .quotation-mark-2 i {
+       display: none;
+    }
+
+}
+
+@media(max-width: 350px) {
+
+    .about-us-content p{
+        max-width: 100%;
+    }
+
+    .infographic-container {
+        display: grid;
+    }
+
+    .infographic-content-container {
+        grid-template-columns: 1fr;
+    }
+
+    .infographic-icon-container-wrapper,
+    .infographic-icon-container,
+    .infographic-icon-container i {
+        display: none;
+    }
+
+    .infographic-container-text {
+        grid-template-columns: 1fr;
+    }
+
+    .infographic-container-count h3 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 0 0 0 35px;
+    }
+
+    .infographic-container-tagline h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}

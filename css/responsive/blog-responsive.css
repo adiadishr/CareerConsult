@@ -1,0 +1,23 @@
+@media (max-width:450px) {
+
+    .banner {
+        height: 40vh;
+        position: relative;
+        z-index: -1000;
+    }
+
+    .feature {
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
+        max-width: 350px;
+    }
+
+    .catalog {
+        max-width: 350px;
+        margin: auto;
+    }
+
+    .catalog-list {
+        grid-template-columns: 1fr;
+    }
+}

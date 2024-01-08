@@ -1,0 +1,152 @@
+@media(max-width: 1024px) {
+    .hero-container {
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+        height: fit-content;
+    }
+
+    .contentcontainer {
+        margin-left: 2.5rem;
+        transform: translate(0%, 0%);
+    }
+
+    .subheadings {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .subheadings,
+    .heading1,
+    .heading2 {
+        font-size: 2.25rem;
+        transform: translate(0%, 0%);
+    }
+
+    .intro {
+        margin-top: -1rem;
+    }
+
+    .imagecontainer {
+        transform: translate(-5%, 15%);
+    }
+
+    .imagecontent {
+        transform: translate(50%, -20%);
+    }
+
+    .footer-gradient h5 {
+        text-align: center;
+    }
+}
+
+@media(max-width: 450px) {
+
+    nav {
+        justify-content: space-between;
+        padding: 0rem 2rem 0rem 0rem;
+    }
+
+    .navlogo {
+        display: block;
+    }
+
+    .navlinks{
+        display: none;
+    }
+
+    .querylink {
+        display: block;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        height: 28rem;
+        margin-top: 2.5rem;
+        margin-bottom: -3.5rem;
+        padding: 0rem 2.5rem;
+    }
+
+    .contentcontainer {
+        transform: translate(0%, 0%);
+        padding-bottom: 0rem;
+        margin-left: 0;
+        position: relative;
+        z-index: -1000;
+    }
+
+    .learnmore {
+        display: none;
+    }
+
+    .rightside {
+        display: none;
+    }
+
+    .subheadings,
+    .heading1,
+    .heading2 {
+        transform: translate(0%, 0%);
+        text-align: center;
+    }
+
+    .subheadings {
+        padding-bottom: 1.5rem;
+        margin-top: -5rem;
+    }
+
+    .imagecontent {
+        display: none;
+    }
+
+    .infographic-container {
+        display: grid;
+    }
+
+    .infographic-content-container {
+        grid-template-columns: 1fr 0fr;
+    }
+
+    .infographic-icon-container-wrapper,
+    .infographic-icon-container,
+    .infographic-icon-container i {
+        display: none;
+    }
+
+    .infographic-container-text {
+        column-gap: 3.5rem;
+    }
+
+    .infographic-container-count h3{
+        font-size: 2rem;
+    }
+
+    .infographic-container-tagline h3{
+        font-size: 1.5rem;
+    }
+
+    .services-container .row {
+        grid-template-columns: 1fr;
+    }
+
+    
+    .services-container {
+        width: 70%;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 1rem 2rem 5rem 2rem;
+    }
+
+    .footercontent {
+        text-align: center;
+    }
+
+    .footercontent h5{
+        text-align: center;
+    }
+
+    .footerform{
+        justify-content: center;
+    }
+}

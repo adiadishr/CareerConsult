@@ -37,6 +37,10 @@ nav {
   background-color: var(--white);
 }
 
+.querylink {
+  display: none;
+}
+
 nav img {
   padding-top: 2rem;
 }

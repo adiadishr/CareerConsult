@@ -1,0 +1,44 @@
+@media (max-width:450px) {
+
+    .hero-container {
+        height: 500px;
+    }
+
+    .hero-container-brightness {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .hero-heading {
+        transform: translate(0%, 0%);
+        max-width: 400px;
+    }
+
+    .hero-heading h1 {
+        text-align: center;
+        transform: translate(0%, 0%);
+        font-size: 5rem;
+    }
+
+    .hero-text {
+        display: none;
+    }
+
+    .sub-container-one-one {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width:350px) {
+    .hero-heading {
+        max-width: 300px;
+    }
+    .hero-heading h1 {
+        font-size: 4rem;
+    }
+}
