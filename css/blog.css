@@ -290,8 +290,12 @@ nav img {
 /* catalog start */
 
 .catalog {
-padding: 0 0 5rem 0;
-width: var(--max-width);
+  padding: 0 0 5rem 0;
+  width: var(--max-width);
+  display: grid;
+  grid-auto-rows: .1fr 1fr;
+  margin: auto;
+  margin-top: 2.5rem;
 }
 
 .catalog h1{

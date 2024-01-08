@@ -412,13 +412,14 @@ nav img {
 .quotation-mark-1 {
   font-size: 2rem;
   color: var(--white);
-  transform: translate(4.5rem, -1.25rem);
+  transform: translate(-1rem, -1.25rem);
 }
 
 .quotation-mark-2 {
   font-size: 2rem;
   color: var(--white);
-  transform: translate(-4.5rem, 2.5rem);
+  transform: translate(0rem, 2.5rem);
+  display: none;
 }
 
 .quoter {
