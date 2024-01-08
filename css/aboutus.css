@@ -386,7 +386,7 @@ nav img {
   margin-top: -20px;
   display: grid;
   align-content: center;
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 
 @keyframes quotegradient {

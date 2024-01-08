@@ -220,6 +220,7 @@ nav img {
   font-size: 1rem;
   color: var(--text-color);
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
 .rightside {

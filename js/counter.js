@@ -5,7 +5,7 @@ const callback = entries => {
 		const el = entry.target
 		if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
 			counterUp( el, {
-				duration: 1400,
+				duration: 2500,
 				delay: 16,
 			} )
 			el.classList.add( 'is-visible' )

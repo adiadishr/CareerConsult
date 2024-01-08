@@ -10,7 +10,8 @@
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://kit.fontawesome.com/ee759840f5.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
-  <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+  <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+  <link rel="stylesheet" href="/css/assets/sidenav-dropdown.css">
 </head>
 
 <body>
@@ -47,12 +48,17 @@
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         </li>
         <li class="links"><a href="/pages/index.html">Home</a></li>
-        <li class="links querylink"><a href="/pages/testpreparation.html">Test Preparation</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studyus.html">Study in US</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studycan.html">Study in Canada</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studyaus.html">Study in Australia</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studyuk.html">Study in UK</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studynzl.html">Study in New Zealand</a></li>
+        <li class="links"><a href="/pages/testpreparation.html">Test Preparation</a></li>
+        <button class="dropdown-btn querylink">Study Abroad 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <li class="links querylink"><a href="/pages/studyabroad/studyus.html">Study in US</a></li>
+          <li class="links querylink"><a href="/pages/studyabroad/studycan.html">Study in Canada</a></li>
+          <li class="links querylink"><a href="/pages/studyabroad/studyaus.html">Study in Australia</a></li>
+          <li class="links querylink"><a href="/pages/studyabroad/studyuk.html">Study in UK</a></li>
+          <li class="links querylink"><a href="/pages/studyabroad/studynzl.html">Study in New Zealand</a></li>
+        </div>
         <li class="links"><a href="/pages/blog.html">Blog</a></li>
         <li class="links"><a href="/pages/aboutus.html">About Us</a></li>
         <li class="links"><a href="contact.html">Contact</a></li>
@@ -211,7 +217,7 @@
   </section>
 
   <div class="testimonial-heading">
-    <h1>Testimonials</h2>
+    <h1>Applicant's Testimonials</h2>
   </div>
 
   <section class="testimonial-container">
@@ -227,8 +233,7 @@
         <li class="card">
           <div class="img"><img src="/assets/images/testimonial-simran.png" alt="img" draggable="false"></div>
           <h2>Simran Gaire</h2>
-          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magnam est. Repudiandae, laboriosam
-            quos.</span>
+          <span>I really owe it all to Career Consult, they took all the stressing and planning out of my hands and guided me to go abroad.</span>
         </li>
         <li class="card">
           <div class="img"><img src="/assets/images/Resham.jpeg" alt="img" draggable="false"></div>
@@ -331,6 +336,7 @@
 
   <script src="/js/counter.js"></script>
   <script src="/js/index.js"></script>
+  <script src="/js/sidenav-dropdown.js"></script>
   
 </body>
 
