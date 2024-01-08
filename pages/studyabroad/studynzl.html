@@ -11,6 +11,7 @@
   <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="/css/responsive/generalresponsive.css">
   <link rel="stylesheet" href="/css/responsive/study-abroad-responsive.css">
+  <link rel="stylesheet" href="/css/assets/sidenav-dropdown.css">
 </head>
 
 <body>
@@ -47,12 +48,17 @@
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         </li>
         <li class="links"><a href="/pages/index.html">Home</a></li>
-        <li class="links querylink"><a href="/pages/testpreparation.html">Test Preparation</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studyus.html">Study in US</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studycan.html">Study in Canada</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studyaus.html">Study in Australia</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studyuk.html">Study in UK</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studynzl.html">Study in New Zealand</a></li>
+        <li class="links"><a href="/pages/testpreparation.html">Test Preparation</a></li>
+        <button class="dropdown-btn querylink">Study Abroad 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <li class="links querylink"><a href="/pages/studyabroad/studyus.html">Study in US</a></li>
+          <li class="links querylink"><a href="/pages/studyabroad/studycan.html">Study in Canada</a></li>
+          <li class="links querylink"><a href="/pages/studyabroad/studyaus.html">Study in Australia</a></li>
+          <li class="links querylink"><a href="/pages/studyabroad/studyuk.html">Study in UK</a></li>
+          <li class="links querylink"><a href="/pages/studyabroad/studynzl.html">Study in New Zealand</a></li>
+        </div>
         <li class="links"><a href="/pages/blog.html">Blog</a></li>
         <li class="links"><a href="/pages/aboutus.html">About Us</a></li>
         <li class="links"><a href="contact.html">Contact</a></li>
@@ -219,6 +225,7 @@
     </div>
   </footer>
 
+  <script src="/js/sidenav-dropdown.js"></script>
   <script src="/js/studyabroad.js"></script>
 
 </body>

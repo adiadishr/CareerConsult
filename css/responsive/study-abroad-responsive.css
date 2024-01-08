@@ -25,12 +25,13 @@
         display: none;
     }
 
-    .sub-container-one-one {
-        grid-template-columns: 1fr;
+    .container-one {
+        max-width: 350px;
+        margin-bottom: 4rem;
     }
 
-    .footer {
-        padding: 3rem 0;
+    .sub-container-one-one {
+        grid-template-columns: 1fr;
     }
 }
 

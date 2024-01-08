@@ -8,7 +8,7 @@
 
     .feature {
         grid-template-columns: 1fr;
-        row-gap: 5rem;
+        row-gap: 10rem;
         max-width: 350px;
     }
 
@@ -19,5 +19,10 @@
 
     .catalog-list {
         grid-template-columns: 1fr;
+    }
+
+    .right {
+        position: relative;
+        z-index: -1000;
     }
 }
