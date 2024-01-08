@@ -24,6 +24,10 @@ body {
   background-color: var(--bg-color);
 }
 
+.filler {
+  display: none;
+}
+
 /* nav start */
 
 nav {

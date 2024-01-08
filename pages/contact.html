@@ -10,13 +10,13 @@
   <script src="https://kit.fontawesome.com/ee759840f5.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="/css/responsive/generalresponsive.css">
+  <link rel="stylesheet" href="/css/responsive/contact-responsive.css">
 </head>
 
 <body>
 
-
   <nav>
-    <div>
+    <div class="navlogo">
       <a href="/pages/index.html"><img src="/assets/images/logo.png" height="auto" width="200px" /></a>
     </div>
 
@@ -47,6 +47,12 @@
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         </li>
         <li class="links"><a href="/pages/index.html">Home</a></li>
+        <li class="links querylink"><a href="/pages/testpreparation.html">Test Preparation</a></li>
+        <li class="links querylink"><a href="/pages/studyabroad/studyus.html">Study in US</a></li>
+        <li class="links querylink"><a href="/pages/studyabroad/studycan.html">Study in Canada</a></li>
+        <li class="links querylink"><a href="/pages/studyabroad/studyaus.html">Study in Australia</a></li>
+        <li class="links querylink"><a href="/pages/studyabroad/studyuk.html">Study in UK</a></li>
+        <li class="links querylink"><a href="/pages/studyabroad/studynzl.html">Study in New Zealand</a></li>
         <li class="links"><a href="/pages/blog.html">Blog</a></li>
         <li class="links"><a href="/pages/aboutus.html">About Us</a></li>
         <li class="links"><a href="contact.html">Contact</a></li>
@@ -55,6 +61,16 @@
 
     <span class="sidenavbtn" onclick="openNav()">&#9776;</span>
   </nav>
+
+  <div class="filler">
+    <h1>Feel free to contact us</h1>
+    <h2>Anytime, Anyday</h2>
+    <p>Our team of experienced consultants is committed to providing personalized guidance to help you achieve your
+      academic and career goals.</p>
+    <div class="imageholder">
+      <img src="/assets/images/Contact.png"></img>
+    </div>
+  </div>
 
   <section class="contact-container">
 
@@ -98,7 +114,7 @@
             <h5>Our Email</h5>
             <p><a href="#"> careerconsult2022@gmail.com<i class="fa-solid fa-arrow-right"></i></a></p>
           </div>
-          <div class="contact-details-row">
+          <div class="contact-details-row" id="contact-footer">
             <p class="contact-footer">For inquiries and further assistance, reach out to us <br>
               Career Consult | Dedicate to Excellence
             </p>
@@ -185,6 +201,7 @@
   </footer>
 
   <script src="/js/contact.js"></script>
+
 </body>
 
 </html>
