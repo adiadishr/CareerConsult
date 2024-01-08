@@ -11,7 +11,7 @@
         font-weight: 500;
     }
 
-    .active {
+    .dropdown-btn:active {
         background-color: var(--primary-color);
         color: white;
       }
@@ -26,6 +26,7 @@
       /* Optional: Style the caret down icon */
       .fa-caret-down {
         float: right;
+        padding-left: 8px;
         padding-right: 8px;
       }
 

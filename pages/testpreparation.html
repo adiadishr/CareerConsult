@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/css/responsive/testpreparation-responsive.css">
   <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
   <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="/css/assets/sidenav-dropdown.css">
 
 </head>
 
@@ -49,12 +50,17 @@
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         </li>
         <li class="links"><a href="/pages/index.html">Home</a></li>
-        <li class="links querylink"><a href="/pages/testpreparation.html">Test Preparation</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studyus.html">Study in US</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studycan.html">Study in Canada</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studyaus.html">Study in Australia</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studyuk.html">Study in UK</a></li>
-        <li class="links querylink"><a href="/pages/studyabroad/studynzl.html">Study in New Zealand</a></li>
+        <li class="links"><a href="/pages/testpreparation.html">Test Preparation</a></li>
+        <button class="dropdown-btn querylink">Study Abroad 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <li class="links querylink"><a href="/pages/studyabroad/studyus.html">Study in US</a></li>
+          <li class="links querylink"><a href="/pages/studyabroad/studycan.html">Study in Canada</a></li>
+          <li class="links querylink"><a href="/pages/studyabroad/studyaus.html">Study in Australia</a></li>
+          <li class="links querylink"><a href="/pages/studyabroad/studyuk.html">Study in UK</a></li>
+          <li class="links querylink"><a href="/pages/studyabroad/studynzl.html">Study in New Zealand</a></li>
+        </div>
         <li class="links"><a href="/pages/blog.html">Blog</a></li>
         <li class="links"><a href="/pages/aboutus.html">About Us</a></li>
         <li class="links"><a href="contact.html">Contact</a></li>
@@ -368,12 +374,13 @@
 
   <!-- js start -->
 
+  <script src="/js/sidenav-dropdown.js"></script>
+  <script src="/js/testpreparation.js"></script>
+  <script src="https://kit.fontawesome.com/ee759840f5.js" crossorigin="anonymous"></script>
 
   <!-- js end -->
 
 </body>
 
-<script src="/js/testpreparation.js"></script>
-<script src="https://kit.fontawesome.com/ee759840f5.js" crossorigin="anonymous"></script>
 
 </html>
