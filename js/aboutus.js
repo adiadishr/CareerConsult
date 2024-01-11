@@ -76,6 +76,23 @@ ScrollReveal().reveal(".column", {
     interval: 200
 });
 
+ScrollReveal().reveal(".heading", {
+    delay: 200,
+    duration: 1400,
+    origin: "bottom",
+    distance: "200px",
+    easing: "ease-in-out",
+});
+
+ScrollReveal().reveal(".box", {
+    delay: 300,
+    duration: 1400,
+    origin: "bottom",
+    distance: "200px",
+    easing: "ease-in-out",
+    interval: 200
+});
+
 ScrollReveal().reveal(".quote-container", {
     delay: 300,
     duration: 1000,
@@ -89,6 +106,8 @@ ScrollReveal().reveal(".timeline-container", {
     distance: "200px",
     easing: "ease-in-out",
 });
+
+
 
 
 

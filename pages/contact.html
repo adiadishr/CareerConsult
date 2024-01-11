@@ -80,7 +80,9 @@
 
   <section class="contact-container">
 
-    <form action="" class="contact-form">
+    <form method="post"
+      action="https://script.google.com/macros/s/AKfycbzXiasQhmOCrdYXpRG_PFgJKrREBG5CLNGucz54qjNPzZlbhFEbqWre0THt1ngFY8Xo/exec"
+      class="contact-form">
       <div class="contact-form-title">
         <h2>Get in touch</h2>
         <!-- <hr> -->
@@ -88,13 +90,13 @@
       <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
       <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
       <input type="text" name="phone" placeholder="Your Phone number" class="contact-inputs" required>
-      <select name="cars" class="contact-select" aria-placeholder="Your Objective">
+      <select name="objective" class="contact-select" aria-placeholder="Your Objective">
         <option value="counselling">Counselling</option>
         <option value="studyabroad">Study Abroad</option>
         <option value="documentation">Documentation Assistance</option>
         <option value="testpreparation">Test Preparation</option>
       </select>
-      <button type="submit">Submit<i class="fa-solid fa-arrow-right-long"></i></button>
+      <button type="submit" id="submit">Submit<i class="fa-solid fa-arrow-right-long"></i></button>
     </form>
 
     <div class="contact-details">

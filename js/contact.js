@@ -76,3 +76,25 @@ ScrollReveal().reveal(".contact-details", {
     distance: "200px",
     easing: "ease-in-out",
 });
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzXiasQhmOCrdYXpRG_PFgJKrREBG5CLNGucz54qjNPzZlbhFEbqWre0THt1ngFY8Xo/exec'
+const form = document.forms['contact-form']
+document.getElementById("submit").addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => alert("Thank you! your form is submitted successfully."))
+        .then(() => { window.location.reload(); })
+        .catch(error => console.error('Error!', error.message))
+})
+
+React
+
+Reply
+
+
+
+
+
+
+
